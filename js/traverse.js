@@ -5,26 +5,30 @@ const ul = document.querySelector('ul');
 // console.log(p.parentNode)
 // console.log(p.parentNode.parentNode);
 
-const html = document.documentElement;
-// console.log(html.parentNode)
-// console.log(html.parentElement);
+// const html = document.documentElement;
+// // console.log(html.parentNode)
+// // console.log(html.parentElement);
 
-console.log(ul.childNodes);
-console.log(ul.firstChild);
-console.log(ul.firstElementChild);
-// ul.firstChild.style.color = 'yellow'; // error - text no style
-ul.firstElementChild.style.backgroundColor = 'yellow';
+// console.log(ul.childNodes);
+// console.log(ul.firstChild);
+// console.log(ul.firstElementChild);
+// // ul.firstChild.style.color = 'yellow'; // error - text no style
+// ul.firstElementChild.style.backgroundColor = 'yellow';
 
-for (let element of ul.children){
-  element.style.backgroundColor = 'lightgreen';
-}
+// for (let element of ul.children){
+//   element.style.backgroundColor = 'lightgreen';
+// }
 
-for (let element in ul.children){
-  console.log(element)
-}
+// for (let element in ul.children){
+//   console.log(element)
+// }
 
-document.body.children[0].lastElementChild.style.backgroundColor = 'fuchsia';
+// document.body.children[0].lastElementChild.style.backgroundColor = 'fuchsia';
 
-const product1 = ul.children[1];
-product1.nextElementSibling.style.backgroundColor = 'coral';
-product1.previousElementSibling.style.backgroundColor = 'red';
+// const product1 = ul.children[1];
+// product1.nextElementSibling.style.backgroundColor = 'coral';
+// product1.previousElementSibling.style.backgroundColor = 'red';
+
+ul.childNodes.forEach(element => console.log(element));
+
+ul.children.forEach(element => console.log(element)); // error ...
